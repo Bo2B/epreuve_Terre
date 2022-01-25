@@ -13,8 +13,13 @@ alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 # boucler et afficher resultat
 debut = 0
-for arg in alphabet:
-    debut = debut+1
-    if argument == arg:
-        argument = debut
-        print(alphabet[argument-1:len(alphabet)])
+try:
+    for arg in alphabet:
+        debut = debut+1
+        if argument == arg:
+            argument = debut
+            print(alphabet[argument-1:len(alphabet)])
+except:
+    print("")
+    
+        
