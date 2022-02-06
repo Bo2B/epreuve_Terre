@@ -1,14 +1,15 @@
 #!/usr/bin/python
 # -*- coding: Latin-1 -*-
+
 # ---- racine carrée d'un nombre ----
 
-import math
 import sys
 
-for i in sys.argv[1:]:
-    i = math.sqrt(int(i))
-
-print (int(i))
-
-#gérer les arguments négatifs
-# gérer argument vide
+# Tester, calculer, afficher
+try:
+    for i in sys.argv[1:]:
+        x = [int(v) for v in i]
+        r = x[0]**(0.5)
+        print(int(r))
+except ValueError:
+    print("Je ne calcul que les entiers positifs.")

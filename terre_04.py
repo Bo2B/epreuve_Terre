@@ -16,4 +16,4 @@ try:
     elif (arg%2) == 1:
         print("impair")   
 except:
-    print("Tu me la mettras pas à l'envers.")
+    print("Tu ne me la mettras pas à l'envers.")

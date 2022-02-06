@@ -5,6 +5,7 @@
 
 import sys
 
+# récupérer argumet dans variable
 for x in sys.argv[1:]:
     x = sys.argv[1:] 
     y = [int(i) for i in x]
@@ -12,7 +13,7 @@ for x in sys.argv[1:]:
     b = y[1]
     c = y[2]
 
-
+# tester, afficher
 if a == b == c:
     print("erreur.")
 else:
@@ -22,5 +23,3 @@ else:
         print(b)
     else:
         print(c)
-
-# Gérer quand ils n'y a pasq d'argument

@@ -6,13 +6,15 @@
 import sys
 from time import *
 
+# tester
 for i in sys.argv[1:]:
     h = i
     if int(h[:-3]) > 12:
         h = str(int(h[:-3])-12) + (h[-3:]) + "PM"
     else:
         h = i + "AM"
-    
+
+# afficher   
 print (h)
 
 

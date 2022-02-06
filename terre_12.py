@@ -5,6 +5,7 @@
 
 import sys
 
+# tester
 for i in sys.argv[1:]:
     h = i
     if h[5:] == 'PM':
@@ -12,4 +13,5 @@ for i in sys.argv[1:]:
     else:
         h = h[:-2]
 
+# afficher
 print(h)

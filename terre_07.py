@@ -1,22 +1,23 @@
 #!/usr/bin/python
 # -*- coding: Latin-1 -*
+
 # ---- taille d'une chaîne ----
 
 import sys 
 
-for i in sys.argv[1:]:
-    argument = i
-    try:
-        print(len(argument))
-    except:
-        print('erreur.')
+# n'afficher le nombre de caractère que d'une seul chaîne
+# tester argument
+if sys.argv[1:] == []:
+    print("erreur.")
 
-
-""""
-for i in sys.argv[1:]:
-    string = i
-
-print(len(string))
-
-"""
-# gérer carractère spéciaux en argument 
+try:
+    for x in sys.argv[1:]:
+        y = [int(i) for i in x]
+        print("erreur.")
+except ValueError:
+    if sys.argv[2:] != sys.argv[-1:]:
+        a = sys.argv[1:]
+        str_a = "".join(a)
+        print(len(str_a)) 
+    else:
+        print("erreur.")
